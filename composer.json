@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Zelenin\\SmsRu\\": ""
+            "N1Creator\\SmsRu\\": ""
         }
     }
 }
