@@ -1,8 +1,8 @@
 <?php
 
-namespace Zelenin\SmsRu\Client;
+namespace N1Creator\SmsRu\Client;
 
-use Zelenin\SmsRu\Exception\Exception;
+use N1Creator\SmsRu\Exception\Exception;
 
 class Client implements ClientInterface
 {

@@ -29,32 +29,32 @@ php composer.phar require zelenin/smsru "~5"
 Простая авторизация (с помощью api_id):
 
 ```php
-$client = new \Zelenin\SmsRu\Api(new \Zelenin\SmsRu\Auth\ApiIdAuth($apiId), new \Zelenin\SmsRu\Client\Client());
+$client = new \N1Creator\SmsRu\Api(new \N1Creator\SmsRu\Auth\ApiIdAuth($apiId), new \N1Creator\SmsRu\Client\Client());
 ```
 
 Усиленная авторизация (с помощью api_id, логина и пароля):
 
 ```php
-$client = new \Zelenin\SmsRu\Api(new \Zelenin\SmsRu\Auth\LoginPasswordSecureAuth($login, $password, $apiId), new \Zelenin\SmsRu\Client\Client());
+$client = new \N1Creator\SmsRu\Api(new \N1Creator\SmsRu\Auth\LoginPasswordSecureAuth($login, $password, $apiId), new \N1Creator\SmsRu\Client\Client());
 ```
 
 Усиленная авторизация (с помощью логина и пароля):
 
 ```php
-$client = new \Zelenin\SmsRu\Api(new \Zelenin\SmsRu\Auth\LoginPasswordAuth($login, $password), new \Zelenin\SmsRu\Client\Client());
+$client = new \N1Creator\SmsRu\Api(new \N1Creator\SmsRu\Auth\LoginPasswordAuth($login, $password), new \N1Creator\SmsRu\Client\Client());
 ```
 
 Отправка SMS:
 
 ```php
-$sms1 = new \Zelenin\SmsRu\Entity\Sms($phone1, $text1);
+$sms1 = new \N1Creator\SmsRu\Entity\Sms($phone1, $text1);
 $sms1->translit = 1;
-$sms2 = new \Zelenin\SmsRu\Entity\Sms($phone2, $text2);
+$sms2 = new \N1Creator\SmsRu\Entity\Sms($phone2, $text2);
 
 $client->smsSend($sms1);
 $client->smsSend($sms2);
 
-$client->smsSend(new \Zelenin\SmsRu\Entity\SmsPool([$sms1, $sms2]));
+$client->smsSend(new \N1Creator\SmsRu\Entity\SmsPool([$sms1, $sms2]));
 ```
 
 Статус SMS:
@@ -68,7 +68,7 @@ $client->smsStatus($smsId);
 Стоимость SMS:
 
 ```php
-$client->smsCost(new \Zelenin\SmsRu\Entity\Sms($phone, $text));
+$client->smsCost(new \N1Creator\SmsRu\Entity\Sms($phone, $text));
 ```
 
 Баланс:
@@ -112,7 +112,3 @@ $client->stoplistDel($phone);
 ```php
 $client->stoplistGet();
 ```
-
-## Автор
-
-[Александр Зеленин](https://github.com/zelenin/), e-mail: [aleksandr@zelenin.me](mailto:aleksandr@zelenin.me)

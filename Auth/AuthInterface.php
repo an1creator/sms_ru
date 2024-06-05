@@ -1,8 +1,8 @@
 <?php
 
-namespace Zelenin\SmsRu\Auth;
+namespace N1Creator\SmsRu\Auth;
 
-use Zelenin\SmsRu\Api;
+use N1Creator\SmsRu\Api;
 
 interface AuthInterface
 {

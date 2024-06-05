@@ -1,6 +1,6 @@
 <?php
 
-namespace Zelenin\SmsRu\Response;
+namespace N1Creator\SmsRu\Response;
 
 class AuthCheckResponse extends AbstractResponse
 {

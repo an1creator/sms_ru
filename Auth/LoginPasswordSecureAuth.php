@@ -1,9 +1,9 @@
 <?php
 
-namespace Zelenin\SmsRu\Auth;
+namespace N1Creator\SmsRu\Auth;
 
-use Zelenin\SmsRu\Auth\TokenCache\CacheInterface;
-use Zelenin\SmsRu\Auth\TokenCache\DummyCache;
+use N1Creator\SmsRu\Auth\TokenCache\CacheInterface;
+use N1Creator\SmsRu\Auth\TokenCache\DummyCache;
 
 class LoginPasswordSecureAuth extends AbstractAuth
 {

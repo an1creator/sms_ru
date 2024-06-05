@@ -1,8 +1,8 @@
 <?php
 
-namespace Zelenin\SmsRu\Auth\TokenCache;
+namespace N1Creator\SmsRu\Auth\TokenCache;
 
-use Zelenin\SmsRu\Exception\Exception;
+use N1Creator\SmsRu\Exception\Exception;
 
 class FileCache implements CacheInterface
 {

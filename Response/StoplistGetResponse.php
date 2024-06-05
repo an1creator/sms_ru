@@ -1,8 +1,8 @@
 <?php
 
-namespace Zelenin\SmsRu\Response;
+namespace N1Creator\SmsRu\Response;
 
-use Zelenin\SmsRu\Entity\StoplistPhone;
+use N1Creator\SmsRu\Entity\StoplistPhone;
 
 class StoplistGetResponse extends AbstractResponse
 {

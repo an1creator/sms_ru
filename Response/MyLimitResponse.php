@@ -1,6 +1,6 @@
 <?php
 
-namespace Zelenin\SmsRu\Response;
+namespace N1Creator\SmsRu\Response;
 
 class MyLimitResponse extends AbstractResponse
 {

@@ -1,24 +1,24 @@
 <?php
 
-namespace Zelenin\SmsRu;
+namespace N1Creator\SmsRu;
 
-use Zelenin\SmsRu\Auth\AuthInterface;
-use Zelenin\SmsRu\Client\ClientInterface;
-use Zelenin\SmsRu\Entity\AbstractSms;
-use Zelenin\SmsRu\Entity\Sms;
-use Zelenin\SmsRu\Entity\SmsPool;
-use Zelenin\SmsRu\Entity\StoplistPhone;
-use Zelenin\SmsRu\Exception\Exception;
-use Zelenin\SmsRu\Response\AuthCheckResponse;
-use Zelenin\SmsRu\Response\MyBalanceResponse;
-use Zelenin\SmsRu\Response\MyLimitResponse;
-use Zelenin\SmsRu\Response\MySendersResponse;
-use Zelenin\SmsRu\Response\SmsCostResponse;
-use Zelenin\SmsRu\Response\SmsResponse;
-use Zelenin\SmsRu\Response\SmsStatusResponse;
-use Zelenin\SmsRu\Response\StoplistAddResponse;
-use Zelenin\SmsRu\Response\StoplistDelResponse;
-use Zelenin\SmsRu\Response\StoplistGetResponse;
+use N1Creator\SmsRu\Auth\AuthInterface;
+use N1Creator\SmsRu\Client\ClientInterface;
+use N1Creator\SmsRu\Entity\AbstractSms;
+use N1Creator\SmsRu\Entity\Sms;
+use N1Creator\SmsRu\Entity\SmsPool;
+use N1Creator\SmsRu\Entity\StoplistPhone;
+use N1Creator\SmsRu\Exception\Exception;
+use N1Creator\SmsRu\Response\AuthCheckResponse;
+use N1Creator\SmsRu\Response\MyBalanceResponse;
+use N1Creator\SmsRu\Response\MyLimitResponse;
+use N1Creator\SmsRu\Response\MySendersResponse;
+use N1Creator\SmsRu\Response\SmsCostResponse;
+use N1Creator\SmsRu\Response\SmsResponse;
+use N1Creator\SmsRu\Response\SmsStatusResponse;
+use N1Creator\SmsRu\Response\StoplistAddResponse;
+use N1Creator\SmsRu\Response\StoplistDelResponse;
+use N1Creator\SmsRu\Response\StoplistGetResponse;
 
 class Api
 {
@@ -79,6 +79,10 @@ class Api
             $params['test'] = 1;
         }
 
+        if ($sms->ip) {
+            $params['ip'] = $sms->ip;
+        }
+
         if ($sms->partner_id) {
             $params['partner_id'] = $sms->partner_id;
         } else if ($this->getAuth()->getPartnerId()) {
@@ -95,10 +99,6 @@ class Api
                 if (!preg_match('/=/', $id)) {
                     $smsResponse->ids[] = $id;
                 }
-//                else {
-//                    $result = explode('=', $id);
-//                    $response[$result[0]] = $result[1];
-//                }
             }
         }
 

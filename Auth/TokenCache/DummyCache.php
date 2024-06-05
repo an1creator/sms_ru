@@ -1,6 +1,6 @@
 <?php
 
-namespace Zelenin\SmsRu\Auth\TokenCache;
+namespace N1Creator\SmsRu\Auth\TokenCache;
 
 class DummyCache implements CacheInterface
 {

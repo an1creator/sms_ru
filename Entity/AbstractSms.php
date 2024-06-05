@@ -1,6 +1,6 @@
 <?php
 
-namespace Zelenin\SmsRu\Entity;
+namespace N1Creator\SmsRu\Entity;
 
 abstract class AbstractSms
 {
@@ -24,6 +24,11 @@ abstract class AbstractSms
      * @var string
      */
     public $test;
+
+    /**
+     * @var string
+     */
+    public $ip;
 
     /**
      * @var string

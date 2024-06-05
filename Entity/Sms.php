@@ -1,6 +1,6 @@
 <?php
 
-namespace Zelenin\SmsRu\Entity;
+namespace N1Creator\SmsRu\Entity;
 
 class Sms extends AbstractSms
 {

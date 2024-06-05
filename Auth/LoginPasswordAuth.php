@@ -1,6 +1,6 @@
 <?php
 
-namespace Zelenin\SmsRu\Auth;
+namespace N1Creator\SmsRu\Auth;
 
 class LoginPasswordAuth extends AbstractAuth
 {
