@@ -1,5 +1,5 @@
 {
-    "name": "zelenin/smsru",
+    "name": "n1creator/smsru",
     "description": "PHP-класс для работы с api сервиса [sms.ru](http://sms.ru)",
     "type": "library",
     "keywords": [
@@ -7,19 +7,17 @@
         "sms.ru",
         "api"
     ],
-    "homepage": "https://github.com/zelenin/sms_ru",
+    "homepage": "https://github.com/n1creator/sms_ru",
     "license": "MIT",
     "authors": [
         {
-            "name": "Aleksandr Zelenin",
-            "email": "aleksandr@zelenin.me",
-            "homepage": "http://zelenin.me",
-            "role": "Developer"
+            "name": "N1Creator",
+            "email": "dev@n1creator.com"
         }
     ],
     "support": {
-        "issues": "https://github.com/zelenin/sms_ru/issues",
-        "source": "https://github.com/zelenin/sms_ru"
+        "issues": "https://github.com/n1creator/sms_ru/issues",
+        "source": "https://github.com/n1creator/sms_ru"
     },
     "require": {
         "php": ">=5.5.0",
