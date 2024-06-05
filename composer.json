@@ -7,7 +7,7 @@
         "sms.ru",
         "api"
     ],
-    "homepage": "https://github.com/n1creator/sms_ru",
+    "homepage": "https://github.com/an1creator/sms_ru",
     "license": "MIT",
     "authors": [
         {
@@ -16,8 +16,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/n1creator/sms_ru/issues",
-        "source": "https://github.com/n1creator/sms_ru"
+        "issues": "https://github.com/an1creator/sms_ru/issues",
+        "source": "https://github.com/an1creator/sms_ru"
     },
     "require": {
         "php": ">=5.5.0",
