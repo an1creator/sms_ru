@@ -1,3 +1,5 @@
+###### forked from https://github.com/zelenin/sms_ru
+
 # sms_ru
 
 PHP-класс для работы с api сервиса [sms.ru](http://sms.ru)

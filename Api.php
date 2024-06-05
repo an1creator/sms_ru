@@ -10,6 +10,7 @@ use N1Creator\SmsRu\Entity\SmsPool;
 use N1Creator\SmsRu\Entity\StoplistPhone;
 use N1Creator\SmsRu\Exception\Exception;
 use N1Creator\SmsRu\Response\AuthCheckResponse;
+use N1Creator\SmsRu\Response\CallCodeResponse;
 use N1Creator\SmsRu\Response\MyBalanceResponse;
 use N1Creator\SmsRu\Response\MyLimitResponse;
 use N1Creator\SmsRu\Response\MySendersResponse;
@@ -261,6 +262,26 @@ class Api
         }
 
         return $stoplistGetResponse;
+    }
+
+    /**
+     * @param string $phone
+     *
+     * @return CallCodeResponse
+     */
+    public function codeCall($phone)
+    {
+        $params = array_merge(['phone' => $phone], $this->getAuth()->getAuthParams());
+        $response = $this->client->request('code/call', $params);
+
+        $json = json_decode($response, true);
+
+        if (is_array($json) == false) {
+            $response = explode("\n", $response);
+            return new CallCodeResponse(array_shift($response));
+        }
+
+        return CallCodeResponse::makeByJson($json);
     }
 
     /**
