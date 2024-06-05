@@ -15,13 +15,13 @@ PHP-класс для работы с api сервиса [sms.ru](http://sms.ru)
 Запустите
 
 ```
-php composer.phar require zelenin/smsru "~5"
+php composer.phar require n1creator/smsru "dev-master"
 ```
 
 или добавьте
 
 ```
-"zelenin/smsru": "~5"
+"n1creator/smsru": "dev-master"
 ```
 
 в секцию ```require``` вашего composer.json
